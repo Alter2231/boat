@@ -1,0 +1,21 @@
+﻿<Window x:Class="boat.sign"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:boat"
+        mc:Ignorable="d"
+        Title="Регистрация" Height="350" Width="300" Background="DarkGray">
+    <Grid>
+        <StackPanel>
+            <Image Source="petuh.png" Width="140" Margin="20"></Image>
+            <TextBlock Text="Логин" HorizontalAlignment="Center" ></TextBlock>
+            <TextBox Name="Log" HorizontalAlignment="Center" Width="100"/>
+            <TextBlock Text="Пароль" HorizontalAlignment="Center" />
+            <TextBox Name="Pass" HorizontalAlignment="Center" Width="100"/>
+            
+                <Button Name="Reg" HorizontalAlignment="Center" Width="180" Click="Reg_Click">Зарегистрироваться</Button>
+            
+        </StackPanel>
+    </Grid>
+</Window>

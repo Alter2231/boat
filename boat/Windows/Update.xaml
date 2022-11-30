@@ -1,0 +1,25 @@
+﻿<Window x:Class="boat.Update"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:boat"
+        mc:Ignorable="d"
+        Title="Редактирование" Height="250" Width="300" Background="DarkGray">
+    <Grid>
+        <StackPanel>
+            <TextBlock HorizontalAlignment="Center">Логин</TextBlock>
+            <TextBox Name="Tex1" Width="100" HorizontalAlignment="Center"></TextBox>
+            <TextBlock HorizontalAlignment="Center">Пароль</TextBlock>
+            <TextBox Name="Tex2" Width="100" HorizontalAlignment="Center"></TextBox>
+            <TextBlock HorizontalAlignment="Center">Роль</TextBlock>
+            <ComboBox Name="Rol" Width="100" HorizontalAlignment="Center">
+                <ComboBoxItem Name="admin">admin</ComboBoxItem>
+                <ComboBoxItem Name="user">user</ComboBoxItem>
+            </ComboBox>
+            <Button Name="edit" Click="edit_Click">Изменить</Button>
+            
+        </StackPanel>
+        <TextBox Name="Tex3" Width="100" HorizontalAlignment="Center" Visibility="Hidden"></TextBox>
+    </Grid>
+</Window>

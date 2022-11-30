@@ -1,0 +1,30 @@
+﻿<Window x:Class="boat.job1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:boat"
+        mc:Ignorable="d"
+        Title="job1" Height="450" Width="800" Loaded="Window_Loaded" Background="DarkGray">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="185*"/>
+            <RowDefinition Height="32*"/>
+        </Grid.RowDefinitions>
+        
+        <DataGrid Name="DGrid" Grid.ColumnSpan="5"></DataGrid>
+        <Button Name="add" Grid.Row="1" Width="auto" Height="auto" Click="add_Click">Добавление</Button>
+        <Button Name="Edit" Grid.Row="1" Grid.Column="1" Width="auto" Height="auto" Click="Edit_Click">Изменение</Button>
+        <Button Name="Del" Grid.Row="1" Grid.Column="2" Width="auto" Height="auto" Click="Del_Click">Удаление</Button>
+        <Button Name="Refresh" Grid.Row="1" Grid.Column="3" Width="auto" Height="auto" Click="Refresh_Click">Обновить</Button>
+        <Button Name="Back" Grid.Row="1" Grid.Column="4" Width="auto" Height="auto" Click="Back_Click">Вернуться</Button>
+        <ComboBox Name="usr" Grid.Row="1" Visibility="Hidden" ></ComboBox>
+    </Grid>
+</Window>
